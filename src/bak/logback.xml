@@ -5,7 +5,7 @@
 
     <!-- 设置log日志存放地址 -->
     <!--（改） 单环境设置 -->
-    <property name="LOG_HOME" value="/usr/testlogs/springbootlog" />
+    <property name="LOG_HOME" value="D:/eclipse-workspace/my-server/src/main/resources/log" />
 
     <!-- 多环境设置 （如果你需要设置区分 生产环境，测试环境...）-->
     <!-- 如果需要设置多环境的配置，只设置以下注释内容是不够的，还需要给每个环境设置对应的配置文件如（application-dev.properties）-->
@@ -162,7 +162,7 @@
 
     <!-- （改）过滤器，可以指定哪些包，哪个记录到等级， -->
     <!-- 运用的场景比如，你只需要com.demo.controller包下的error日志输出。定义好name="com.demo.controller" level="ERROR" 就行了 -->
-    <logger name="com" level="trace">
+    <logger name="com" level="debug">
         <appender-ref ref="traceAppender" />  
         <appender-ref ref="debugAppender" />  
         <appender-ref ref="infoAppender" />  

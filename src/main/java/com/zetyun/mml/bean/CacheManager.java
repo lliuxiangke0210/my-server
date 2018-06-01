@@ -5,7 +5,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class CacheManager {
+
+	protected static Logger logger = LoggerFactory.getLogger(CacheManager.class);
 
 	private ConcurrentHashMap<String, String> cacheContainer;
 	private static volatile CacheManager cacheManager;
@@ -48,13 +53,17 @@ public class CacheManager {
 			TimerTask task = new TimerTask() {
 				@Override
 				public void run() {
-					System.out.println("TimerTask is called!");
-					doRun();
+					// System.out.println("TimerTask is called!");
+					String info = "2018-02-16 17:58:03,897 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.20.1.23:47266";
+					String warn = "[2018-02-05T16:30:45,468][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified";
+					logger.warn(warn);
+					logger.info(info);
+					// doRun();
 				}
 			};
 
 			Timer timer = new Timer();
-			timer.schedule(task, 0, 1000 * 3);
+			timer.schedule(task, 0, 1000 * 8);
 		}
 
 		private void doRun() {

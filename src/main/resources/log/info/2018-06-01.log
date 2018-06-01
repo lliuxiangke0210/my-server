@@ -1,0 +1,6 @@
+2018-06-01 13:10:24.702 [main] INFO  c.zetyun.mml.Application -Starting Application on liuxk with PID 17880 (D:\eclipse-workspace\my-server\target\classes started by lenovo in D:\eclipse-workspace\my-server)
+2018-06-01 13:10:27.064 [main] INFO  c.zetyun.mml.Application -Started Application in 2.562 seconds (JVM running for 3.148)
+2018-06-01 13:11:18.110 [http-nio-8080-exec-1] INFO  c.z.m.c.AgentInfoController -2018-02-16 17:58:03,897 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.20.1.23:47266
+2018-06-01 13:11:40.068 [http-nio-8080-exec-2] INFO  c.z.m.c.AgentInfoController -2018-02-16 17:58:03,897 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.20.1.23:47266
+2018-06-01 13:11:51.466 [http-nio-8080-exec-3] INFO  c.z.m.c.AgentInfoController -2018-02-16 17:58:03,897 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.20.1.23:47266
+2018-06-01 13:12:10.555 [http-nio-8080-exec-4] INFO  c.z.m.c.AgentInfoController -2018-02-16 17:58:03,897 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.20.1.23:47266

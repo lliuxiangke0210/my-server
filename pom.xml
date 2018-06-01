@@ -11,7 +11,7 @@
     </properties>  
   
   
-  <build>  
+  <!-- <build>  
         <defaultGoal>compile</defaultGoal>  
         <plugins>  
             <plugin>  
@@ -34,7 +34,22 @@
                 </executions>  
             </plugin>  
         </plugins>  
+    </build>   -->
+    
+    
+     <build>  
+        <plugins>  
+            <plugin>  
+                <groupId>org.springframework.boot</groupId>  
+                <artifactId>spring-boot-maven-plugin</artifactId>  
+                <configuration>  
+                    <fork>true</fork>  
+                </configuration>  
+            </plugin>  
+        </plugins>  
     </build>  
+    
+    
       
     <repositories><!-- 代码库 -->  
         <repository>  
@@ -63,6 +78,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        
+        
+        <dependency>  
+          <groupId>org.springframework.boot</groupId>  
+         <artifactId>spring-boot-starter-tomcat</artifactId>  
+        <scope>provided</scope>  
+       </dependency>  
+        
     </dependencies>
 
   
