@@ -40,7 +40,7 @@
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
             <FileNamePattern>${LOG_HOME}/trace/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>180</MaxHistory>
+            <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} -%msg%n</pattern>
@@ -48,7 +48,7 @@
         <!--日志文件最大的大小 -->
         <triggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>20MB</MaxFileSize>
+            <MaxFileSize>200MB</MaxFileSize>
         </triggeringPolicy>
         
          <filter class="ch.qos.logback.classic.filter.LevelFilter">  
@@ -65,7 +65,7 @@
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
             <FileNamePattern>${LOG_HOME}/debug/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>180</MaxHistory>
+            <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} -%msg%n</pattern>
@@ -73,7 +73,7 @@
         <!--日志文件最大的大小 -->
         <triggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>20MB</MaxFileSize>
+            <MaxFileSize>200MB</MaxFileSize>
         </triggeringPolicy>
         
          <filter class="ch.qos.logback.classic.filter.LevelFilter">  
@@ -89,7 +89,7 @@
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
             <FileNamePattern>${LOG_HOME}/info/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>180</MaxHistory>
+            <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} -%msg%n</pattern>
@@ -97,7 +97,7 @@
         <!--日志文件最大的大小 -->
         <triggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>20MB</MaxFileSize>
+            <MaxFileSize>200MB</MaxFileSize>
         </triggeringPolicy>
         
          <filter class="ch.qos.logback.classic.filter.LevelFilter">  
@@ -114,7 +114,7 @@
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
             <FileNamePattern>${LOG_HOME}/warn/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>180</MaxHistory>
+            <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} -%msg%n</pattern>
@@ -122,7 +122,7 @@
         <!--日志文件最大的大小 -->
         <triggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>20MB</MaxFileSize>
+            <MaxFileSize>200MB</MaxFileSize>
         </triggeringPolicy>
         
          <filter class="ch.qos.logback.classic.filter.LevelFilter">  
@@ -141,7 +141,7 @@
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
             <FileNamePattern>${LOG_HOME}/error/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
-            <MaxHistory>180</MaxHistory>
+            <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} -%msg%n</pattern>
@@ -149,7 +149,7 @@
         <!--日志文件最大的大小 -->
         <triggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>20MB</MaxFileSize>
+            <MaxFileSize>200MB</MaxFileSize>
         </triggeringPolicy>
         
          <filter class="ch.qos.logback.classic.filter.LevelFilter">  
